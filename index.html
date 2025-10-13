@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎉 Happy Birthday, Bella! 💜</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Background Music -->
+    <audio id="bgMusic" src="pretty-baby.mp3"></audio>
+
+    <!-- Opening Card Section -->
+    <div class="card" id="card">
+      <div class="front">
+        <h1 class="title">💌 A Special Card Just for You 💌</h1>
+        <p class="subtitle">Click below to open your surprise ✨</p>
+        <button id="openBtn" class="btn">Open Card</button>
+      </div>
+
+      <div class="inside hidden">
+        <h1 class="script-text">🎉 Happy Birthday, Bella! 🎂</h1>
+        <p class="message">
+          Wishing you a day full of love, laughter, and magic 💜 <br />
+          Like your favorite songs beautiful, emotional, and unforgettable.
+        </p>
+        <p class="message">
+          Never forget how special you are, inside and out. 💫 <br />
+          You light up every room just by being you!
+        </p>
+        <button id="nextBtn" class="btn">Next 🎁</button>
+      </div>
+    </div>
+
+    <!-- Cake Celebration Scene -->
+    <div class="cake-scene hidden" id="cakeScene">
+      <button id="backBtn" class="back-btn">⬅ Back</button>
+
+      <!-- Animated background messages -->
+      <div id="birthdayBackground"></div>
+
+      <!-- People and cake setup -->
+      <div class="people">
+        👧
+        <div class="cake">🎂</div>
+        👩
+      </div>
+
+      <div class="table"></div>
+
+      <h1 class="final-message script-text">🎵 Happy Birthday, Bella! 💜</h1>
+
+      <p class="wish-line">
+        May your year be filled with new adventures, soft skies, and endless
+        smiles 💖
+      </p>
+    </div>
+
+    <!-- Confetti Canvas -->
+    <canvas id="confetti"></canvas>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(120deg, #ffcaf1, #c1b2ff);
+  overflow: hidden;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+button {
+  background: #b14cf4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #7b2cbf;
+  transform: scale(1.05);
+}
+
+/* Cake Scene */
+.cake-scene {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, #fddaff, #e6ceff);
+  overflow: hidden;
+}
+
+.people {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+}
+
+.cake {
+  background: #ff8dcf;
+  border-radius: 50%;
+  width: 120px;
+  height: 80px;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.table {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 20px;
+  background: #d4a5ff;
+  border-radius: 10px;
+}
+
+.final-message {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  color: #8031c6;
+  font-weight: bold;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Back button */
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #b14cf4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+.back-btn:hover {
+  background: #7b2cbf;
+  transform: scale(1.05);
+}
+
+/* Moving Happy Birthday Texts */
+#birthdayBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.hb-text {
+  position: absolute;
+  font-size: 2em;
+  color: #c971f8;
+  opacity: 0.7;
+  animation: floatText 8s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes floatText {
+  0% {
+    transform: translateX(-10%) translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(110%) translateY(0);
+    opacity: 0;
+  }
+}
